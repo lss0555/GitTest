@@ -16,6 +16,11 @@ public class UserController {
         return "登录成功";
     }
 
+    @GetMapping("/loginOut")
+    public String loginOut(){
+        return "退出登录";
+    }
+
     @GetMapping("/regist")
     public String regist(){
         return "注册";
