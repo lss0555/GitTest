@@ -1,0 +1,27 @@
+server:
+  port: 8080
+spring:
+  servlet:
+    multipart:
+      max-file-size: 100000000
+  datasource:
+    driver-class-name:  com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lss0555?serverTimezone=UTC&characterEncoding=utf-8
+    username: root
+    password: 888888
+    dbcp2:
+      validation-query: select 1 from dual
+      test-on-borrow: true
+      min-evictable-idle-time-millis: 600000
+      time-between-eviction-runs-millis: 300000
+
+  aop:
+    auto: true
+    proxy-target-class: true
+
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: false
+  type-aliases-package: com.example.book.model
+  mapper-locations: classpath*:mapping/*.xml
+
