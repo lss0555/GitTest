@@ -15,4 +15,9 @@ public class UserController {
     public String login(){
         return "登录成功";
     }
+
+    @GetMapping("/regist")
+    public String regist(){
+        return "注册";
+    }
 }
