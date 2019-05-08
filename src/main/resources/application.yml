@@ -22,6 +22,6 @@ spring:
 mybatis:
   configuration:
     mapUnderscoreToCamelCase: false
-  type-aliases-package: com.example.book.model
+  type-aliases-package: com.example.gitdemo.model
   mapper-locations: classpath*:mapping/*.xml
 
