@@ -15,4 +15,9 @@ public class UserController {
     public String login(){
         return "登录成功";
     }
+
+    @GetMapping("/loginOut")
+    public String loginOut(){
+        return "退出登录";
+    }
 }
